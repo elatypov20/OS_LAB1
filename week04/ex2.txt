@@ -19,38 +19,45 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |-dbus-daemon
         |-fwupd---4*[{fwupd}]
         |-gmenudbusmenupr---2*[{gmenudbusmenupr}]
+        |-gpg-agent
         |-haveged
         |-irqbalance---{irqbalance}
         |-kdeconnectd---3*[{kdeconnectd}]
-        |-kdeinit5-+-2*[file.so]
+        |-kdeinit5-+-drkonqi---2*[{drkonqi}]
+        |          |-2*[file.so]
         |          |-kaccess---2*[{kaccess}]
         |          |-kded5-+-konsole-+-bash---ex2.sh-+-ex2---ex2
         |          |       |         |               `-pstree
         |          |       |         `-2*[{konsole}]
-        |          |       |-konsole-+-bash
+        |          |       |-konsole-+-bash---man---pager
         |          |       |         `-2*[{konsole}]
         |          |       `-6*[{kded5}]
         |          `-klauncher---2*[{klauncher}]
         |-2*[kerneloops]
-        |-kio_http_cache_---{kio_http_cache_}
-        |-ksmserver-+-kwin_x11---7*[{kwin_x11}]
+        |-ksmserver-+-kwin_x11---5*[{kwin_x11}]
         |           `-2*[{ksmserver}]
         |-kwalletd5---2*[{kwalletd5}]
+        |-kwin_x11---5*[{kwin_x11}]
         |-mpd---2*[{mpd}]
         |-networkd-dispat
         |-nvidia-persiste
         |-org_kde_powerde---5*[{org_kde_powerde}]
-        |-plasmashell-+-Telegram---29*[{Telegram}]
+        |-plasmashell-+-Telegram---28*[{Telegram}]
+        |             |-clion.sh---java-+-bash
+        |             |                 |-fsnotifier64
+        |             |                 |-ion.clangd.main---3*[{ion.clangd.main}]
+        |             |                 `-68*[{java}]
         |             |-firefox-+-Privileged Cont---26*[{Privileged Cont}]
-        |             |         |-3*[Web Content---26*[{Web Content}]]
+        |             |         |-RDD Process---2*[{RDD Process}]
         |             |         |-Web Content---29*[{Web Content}]
+        |             |         |-3*[Web Content---26*[{Web Content}]]
+        |             |         |-Web Content---27*[{Web Content}]
+        |             |         |-Web Content---28*[{Web Content}]
         |             |         |-Web Content---18*[{Web Content}]
         |             |         |-WebExtensions---26*[{WebExtensions}]
-        |             |         |-file:// Content---27*[{file:// Content}]
         |             |         |-plasma-browser----2*[{plasma-browser-}]
-        |             |         `-95*[{firefox}]
-        |             |-openfortigui---3*[{openfortigui}]
-        |             `-29*[{plasmashell}]
+        |             |         `-101*[{firefox}]
+        |             `-28*[{plasmashell}]
         |-polkit-kde-auth---4*[{polkit-kde-auth}]
         |-polkitd---2*[{polkitd}]
         |-rsyslogd---3*[{rsyslogd}]
@@ -62,9 +69,6 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |      `-{sddm}
         |-snapd---22*[{snapd}]
         |-start_kdeinit
-        |-sublime_text-+-plugin_host-3.3---4*[{plugin_host-3.3}]
-        |              |-plugin_host-3.8---2*[{plugin_host-3.8}]
-        |              `-19*[{sublime_text}]
         |-switcheroo-cont---2*[{switcheroo-cont}]
         |-systemd-+-(sd-pam)
         |         |-baloorunner---2*[{baloorunner}]
@@ -78,10 +82,7 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |         |-gvfs-gphoto2-vo---2*[{gvfs-gphoto2-vo}]
         |         |-gvfs-mtp-volume---2*[{gvfs-mtp-volume}]
         |         |-gvfs-udisks2-vo---3*[{gvfs-udisks2-vo}]
-        |         |-gvfsd-+-gvfsd-dnssd---2*[{gvfsd-dnssd}]
-        |         |       |-gvfsd-network---3*[{gvfsd-network}]
-        |         |       |-gvfsd-trash---2*[{gvfsd-trash}]
-        |         |       `-2*[{gvfsd}]
+        |         |-gvfsd---2*[{gvfsd}]
         |         |-gvfsd-metadata---2*[{gvfsd-metadata}]
         |         |-kactivitymanage---5*[{kactivitymanage}]
         |         |-kglobalaccel5---2*[{kglobalaccel5}]
@@ -89,9 +90,9 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |         |-obexd
         |         |-pulseaudio---3*[{pulseaudio}]
         |         |-tracker-miner-f---4*[{tracker-miner-f}]
-        |         |-xdg-desktop-por---4*[{xdg-desktop-por}]
+        |         |-xdg-desktop-por---3*[{xdg-desktop-por}]
         |         |-xdg-desktop-por---6*[{xdg-desktop-por}]
-        |         |-xdg-document-po---6*[{xdg-document-po}]
+        |         |-xdg-document-po---5*[{xdg-document-po}]
         |         `-xdg-permission----2*[{xdg-permission-}]
         |-systemd-journal
         |-systemd-logind
@@ -129,39 +130,46 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |-dbus-daemon
         |-fwupd---4*[{fwupd}]
         |-gmenudbusmenupr---2*[{gmenudbusmenupr}]
+        |-gpg-agent
         |-haveged
         |-irqbalance---{irqbalance}
         |-kdeconnectd---3*[{kdeconnectd}]
-        |-kdeinit5-+-2*[file.so]
+        |-kdeinit5-+-drkonqi---2*[{drkonqi}]
+        |          |-2*[file.so]
         |          |-kaccess---2*[{kaccess}]
         |          |-kded5-+-konsole-+-bash---ex2.sh-+-ex2-+-ex2---ex2
         |          |       |         |               |     `-ex2
         |          |       |         |               `-pstree
         |          |       |         `-2*[{konsole}]
-        |          |       |-konsole-+-bash
+        |          |       |-konsole-+-bash---man---pager
         |          |       |         `-2*[{konsole}]
         |          |       `-6*[{kded5}]
         |          `-klauncher---2*[{klauncher}]
         |-2*[kerneloops]
-        |-kio_http_cache_---{kio_http_cache_}
-        |-ksmserver-+-kwin_x11---7*[{kwin_x11}]
+        |-ksmserver-+-kwin_x11---5*[{kwin_x11}]
         |           `-2*[{ksmserver}]
         |-kwalletd5---2*[{kwalletd5}]
+        |-kwin_x11---5*[{kwin_x11}]
         |-mpd---2*[{mpd}]
         |-networkd-dispat
         |-nvidia-persiste
         |-org_kde_powerde---5*[{org_kde_powerde}]
-        |-plasmashell-+-Telegram---29*[{Telegram}]
+        |-plasmashell-+-Telegram---28*[{Telegram}]
+        |             |-clion.sh---java-+-bash
+        |             |                 |-fsnotifier64
+        |             |                 |-ion.clangd.main---3*[{ion.clangd.main}]
+        |             |                 `-68*[{java}]
         |             |-firefox-+-Privileged Cont---26*[{Privileged Cont}]
-        |             |         |-3*[Web Content---26*[{Web Content}]]
+        |             |         |-RDD Process---2*[{RDD Process}]
         |             |         |-Web Content---29*[{Web Content}]
+        |             |         |-3*[Web Content---26*[{Web Content}]]
+        |             |         |-Web Content---27*[{Web Content}]
+        |             |         |-Web Content---28*[{Web Content}]
         |             |         |-Web Content---18*[{Web Content}]
         |             |         |-WebExtensions---26*[{WebExtensions}]
-        |             |         |-file:// Content---27*[{file:// Content}]
         |             |         |-plasma-browser----2*[{plasma-browser-}]
-        |             |         `-93*[{firefox}]
-        |             |-openfortigui---3*[{openfortigui}]
-        |             `-29*[{plasmashell}]
+        |             |         `-101*[{firefox}]
+        |             `-28*[{plasmashell}]
         |-polkit-kde-auth---4*[{polkit-kde-auth}]
         |-polkitd---2*[{polkitd}]
         |-rsyslogd---3*[{rsyslogd}]
@@ -173,9 +181,6 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |      `-{sddm}
         |-snapd---22*[{snapd}]
         |-start_kdeinit
-        |-sublime_text-+-plugin_host-3.3---4*[{plugin_host-3.3}]
-        |              |-plugin_host-3.8---2*[{plugin_host-3.8}]
-        |              `-19*[{sublime_text}]
         |-switcheroo-cont---2*[{switcheroo-cont}]
         |-systemd-+-(sd-pam)
         |         |-baloorunner---2*[{baloorunner}]
@@ -189,10 +194,7 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |         |-gvfs-gphoto2-vo---2*[{gvfs-gphoto2-vo}]
         |         |-gvfs-mtp-volume---2*[{gvfs-mtp-volume}]
         |         |-gvfs-udisks2-vo---3*[{gvfs-udisks2-vo}]
-        |         |-gvfsd-+-gvfsd-dnssd---2*[{gvfsd-dnssd}]
-        |         |       |-gvfsd-network---3*[{gvfsd-network}]
-        |         |       |-gvfsd-trash---2*[{gvfsd-trash}]
-        |         |       `-2*[{gvfsd}]
+        |         |-gvfsd---2*[{gvfsd}]
         |         |-gvfsd-metadata---2*[{gvfsd-metadata}]
         |         |-kactivitymanage---5*[{kactivitymanage}]
         |         |-kglobalaccel5---2*[{kglobalaccel5}]
@@ -200,9 +202,9 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |         |-obexd
         |         |-pulseaudio---3*[{pulseaudio}]
         |         |-tracker-miner-f---4*[{tracker-miner-f}]
-        |         |-xdg-desktop-por---4*[{xdg-desktop-por}]
+        |         |-xdg-desktop-por---3*[{xdg-desktop-por}]
         |         |-xdg-desktop-por---6*[{xdg-desktop-por}]
-        |         |-xdg-document-po---6*[{xdg-document-po}]
+        |         |-xdg-document-po---5*[{xdg-document-po}]
         |         `-xdg-permission----2*[{xdg-permission-}]
         |-systemd-journal
         |-systemd-logind
@@ -240,39 +242,46 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |-dbus-daemon
         |-fwupd---4*[{fwupd}]
         |-gmenudbusmenupr---2*[{gmenudbusmenupr}]
+        |-gpg-agent
         |-haveged
         |-irqbalance---{irqbalance}
         |-kdeconnectd---3*[{kdeconnectd}]
-        |-kdeinit5-+-2*[file.so]
+        |-kdeinit5-+-drkonqi---2*[{drkonqi}]
+        |          |-2*[file.so]
         |          |-kaccess---2*[{kaccess}]
         |          |-kded5-+-konsole-+-bash---ex2.sh-+-ex2-+-ex2---ex2
         |          |       |         |               |     `-ex2
         |          |       |         |               `-pstree
         |          |       |         `-2*[{konsole}]
-        |          |       |-konsole-+-bash
+        |          |       |-konsole-+-bash---man---pager
         |          |       |         `-2*[{konsole}]
         |          |       `-6*[{kded5}]
         |          `-klauncher---2*[{klauncher}]
         |-2*[kerneloops]
-        |-kio_http_cache_---{kio_http_cache_}
-        |-ksmserver-+-kwin_x11---7*[{kwin_x11}]
+        |-ksmserver-+-kwin_x11---5*[{kwin_x11}]
         |           `-2*[{ksmserver}]
         |-kwalletd5---2*[{kwalletd5}]
+        |-kwin_x11---5*[{kwin_x11}]
         |-mpd---2*[{mpd}]
         |-networkd-dispat
         |-nvidia-persiste
         |-org_kde_powerde---5*[{org_kde_powerde}]
-        |-plasmashell-+-Telegram---29*[{Telegram}]
+        |-plasmashell-+-Telegram---28*[{Telegram}]
+        |             |-clion.sh---java-+-bash
+        |             |                 |-fsnotifier64
+        |             |                 |-ion.clangd.main---3*[{ion.clangd.main}]
+        |             |                 `-68*[{java}]
         |             |-firefox-+-Privileged Cont---26*[{Privileged Cont}]
-        |             |         |-3*[Web Content---26*[{Web Content}]]
+        |             |         |-RDD Process---2*[{RDD Process}]
         |             |         |-Web Content---29*[{Web Content}]
+        |             |         |-3*[Web Content---26*[{Web Content}]]
+        |             |         |-Web Content---27*[{Web Content}]
+        |             |         |-Web Content---28*[{Web Content}]
         |             |         |-Web Content---18*[{Web Content}]
         |             |         |-WebExtensions---26*[{WebExtensions}]
-        |             |         |-file:// Content---27*[{file:// Content}]
         |             |         |-plasma-browser----2*[{plasma-browser-}]
-        |             |         `-93*[{firefox}]
-        |             |-openfortigui---3*[{openfortigui}]
-        |             `-29*[{plasmashell}]
+        |             |         `-101*[{firefox}]
+        |             `-28*[{plasmashell}]
         |-polkit-kde-auth---4*[{polkit-kde-auth}]
         |-polkitd---2*[{polkitd}]
         |-rsyslogd---3*[{rsyslogd}]
@@ -284,9 +293,6 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |      `-{sddm}
         |-snapd---22*[{snapd}]
         |-start_kdeinit
-        |-sublime_text-+-plugin_host-3.3---4*[{plugin_host-3.3}]
-        |              |-plugin_host-3.8---2*[{plugin_host-3.8}]
-        |              `-19*[{sublime_text}]
         |-switcheroo-cont---2*[{switcheroo-cont}]
         |-systemd-+-(sd-pam)
         |         |-baloorunner---2*[{baloorunner}]
@@ -300,10 +306,7 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |         |-gvfs-gphoto2-vo---2*[{gvfs-gphoto2-vo}]
         |         |-gvfs-mtp-volume---2*[{gvfs-mtp-volume}]
         |         |-gvfs-udisks2-vo---3*[{gvfs-udisks2-vo}]
-        |         |-gvfsd-+-gvfsd-dnssd---2*[{gvfsd-dnssd}]
-        |         |       |-gvfsd-network---3*[{gvfsd-network}]
-        |         |       |-gvfsd-trash---2*[{gvfsd-trash}]
-        |         |       `-2*[{gvfsd}]
+        |         |-gvfsd---2*[{gvfsd}]
         |         |-gvfsd-metadata---2*[{gvfsd-metadata}]
         |         |-kactivitymanage---5*[{kactivitymanage}]
         |         |-kglobalaccel5---2*[{kglobalaccel5}]
@@ -311,9 +314,9 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |         |-obexd
         |         |-pulseaudio---3*[{pulseaudio}]
         |         |-tracker-miner-f---4*[{tracker-miner-f}]
-        |         |-xdg-desktop-por---4*[{xdg-desktop-por}]
+        |         |-xdg-desktop-por---3*[{xdg-desktop-por}]
         |         |-xdg-desktop-por---6*[{xdg-desktop-por}]
-        |         |-xdg-document-po---6*[{xdg-document-po}]
+        |         |-xdg-document-po---5*[{xdg-document-po}]
         |         `-xdg-permission----2*[{xdg-permission-}]
         |-systemd-journal
         |-systemd-logind
@@ -351,10 +354,12 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |-dbus-daemon
         |-fwupd---4*[{fwupd}]
         |-gmenudbusmenupr---2*[{gmenudbusmenupr}]
+        |-gpg-agent
         |-haveged
         |-irqbalance---{irqbalance}
         |-kdeconnectd---3*[{kdeconnectd}]
-        |-kdeinit5-+-2*[file.so]
+        |-kdeinit5-+-drkonqi---2*[{drkonqi}]
+        |          |-2*[file.so]
         |          |-kaccess---2*[{kaccess}]
         |          |-kded5-+-konsole-+-bash---ex2.sh-+-ex2-+-ex2-+-ex2---ex2
         |          |       |         |               |     |     `-ex2
@@ -362,30 +367,35 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |          |       |         |               |     `-ex2
         |          |       |         |               `-pstree
         |          |       |         `-2*[{konsole}]
-        |          |       |-konsole-+-bash
+        |          |       |-konsole-+-bash---man---pager
         |          |       |         `-2*[{konsole}]
         |          |       `-6*[{kded5}]
         |          `-klauncher---2*[{klauncher}]
         |-2*[kerneloops]
-        |-kio_http_cache_---{kio_http_cache_}
-        |-ksmserver-+-kwin_x11---7*[{kwin_x11}]
+        |-ksmserver-+-kwin_x11---5*[{kwin_x11}]
         |           `-2*[{ksmserver}]
         |-kwalletd5---2*[{kwalletd5}]
+        |-kwin_x11---5*[{kwin_x11}]
         |-mpd---2*[{mpd}]
         |-networkd-dispat
         |-nvidia-persiste
         |-org_kde_powerde---5*[{org_kde_powerde}]
-        |-plasmashell-+-Telegram---29*[{Telegram}]
+        |-plasmashell-+-Telegram---28*[{Telegram}]
+        |             |-clion.sh---java-+-bash
+        |             |                 |-fsnotifier64
+        |             |                 |-ion.clangd.main---3*[{ion.clangd.main}]
+        |             |                 `-68*[{java}]
         |             |-firefox-+-Privileged Cont---26*[{Privileged Cont}]
-        |             |         |-3*[Web Content---26*[{Web Content}]]
+        |             |         |-RDD Process---2*[{RDD Process}]
         |             |         |-Web Content---29*[{Web Content}]
+        |             |         |-3*[Web Content---26*[{Web Content}]]
+        |             |         |-Web Content---27*[{Web Content}]
+        |             |         |-Web Content---28*[{Web Content}]
         |             |         |-Web Content---18*[{Web Content}]
         |             |         |-WebExtensions---26*[{WebExtensions}]
-        |             |         |-file:// Content---27*[{file:// Content}]
         |             |         |-plasma-browser----2*[{plasma-browser-}]
-        |             |         `-93*[{firefox}]
-        |             |-openfortigui---3*[{openfortigui}]
-        |             `-29*[{plasmashell}]
+        |             |         `-101*[{firefox}]
+        |             `-28*[{plasmashell}]
         |-polkit-kde-auth---4*[{polkit-kde-auth}]
         |-polkitd---2*[{polkitd}]
         |-rsyslogd---3*[{rsyslogd}]
@@ -397,9 +407,6 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |      `-{sddm}
         |-snapd---22*[{snapd}]
         |-start_kdeinit
-        |-sublime_text-+-plugin_host-3.3---4*[{plugin_host-3.3}]
-        |              |-plugin_host-3.8---2*[{plugin_host-3.8}]
-        |              `-19*[{sublime_text}]
         |-switcheroo-cont---2*[{switcheroo-cont}]
         |-systemd-+-(sd-pam)
         |         |-baloorunner---2*[{baloorunner}]
@@ -413,10 +420,7 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |         |-gvfs-gphoto2-vo---2*[{gvfs-gphoto2-vo}]
         |         |-gvfs-mtp-volume---2*[{gvfs-mtp-volume}]
         |         |-gvfs-udisks2-vo---3*[{gvfs-udisks2-vo}]
-        |         |-gvfsd-+-gvfsd-dnssd---2*[{gvfsd-dnssd}]
-        |         |       |-gvfsd-network---3*[{gvfsd-network}]
-        |         |       |-gvfsd-trash---2*[{gvfsd-trash}]
-        |         |       `-2*[{gvfsd}]
+        |         |-gvfsd---2*[{gvfsd}]
         |         |-gvfsd-metadata---2*[{gvfsd-metadata}]
         |         |-kactivitymanage---5*[{kactivitymanage}]
         |         |-kglobalaccel5---2*[{kglobalaccel5}]
@@ -424,9 +428,9 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |         |-obexd
         |         |-pulseaudio---3*[{pulseaudio}]
         |         |-tracker-miner-f---4*[{tracker-miner-f}]
-        |         |-xdg-desktop-por---4*[{xdg-desktop-por}]
+        |         |-xdg-desktop-por---3*[{xdg-desktop-por}]
         |         |-xdg-desktop-por---6*[{xdg-desktop-por}]
-        |         |-xdg-document-po---6*[{xdg-document-po}]
+        |         |-xdg-document-po---5*[{xdg-document-po}]
         |         `-xdg-permission----2*[{xdg-permission-}]
         |-systemd-journal
         |-systemd-logind
@@ -464,10 +468,12 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |-dbus-daemon
         |-fwupd---4*[{fwupd}]
         |-gmenudbusmenupr---2*[{gmenudbusmenupr}]
+        |-gpg-agent
         |-haveged
         |-irqbalance---{irqbalance}
         |-kdeconnectd---3*[{kdeconnectd}]
-        |-kdeinit5-+-2*[file.so]
+        |-kdeinit5-+-drkonqi---2*[{drkonqi}]
+        |          |-2*[file.so]
         |          |-kaccess---2*[{kaccess}]
         |          |-kded5-+-konsole-+-bash---ex2.sh-+-ex2-+-ex2-+-ex2-+-ex2---ex2
         |          |       |         |               |     |     |     `-ex2
@@ -479,30 +485,34 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |          |       |         |               |     `-ex2
         |          |       |         |               `-pstree
         |          |       |         `-2*[{konsole}]
-        |          |       |-konsole-+-bash
+        |          |       |-konsole-+-bash---man---pager
         |          |       |         `-2*[{konsole}]
         |          |       `-6*[{kded5}]
         |          `-klauncher---2*[{klauncher}]
         |-2*[kerneloops]
-        |-kio_http_cache_---{kio_http_cache_}
-        |-ksmserver-+-kwin_x11---7*[{kwin_x11}]
+        |-ksmserver-+-kwin_x11---5*[{kwin_x11}]
         |           `-2*[{ksmserver}]
         |-kwalletd5---2*[{kwalletd5}]
+        |-kwin_x11---5*[{kwin_x11}]
         |-mpd---2*[{mpd}]
         |-networkd-dispat
         |-nvidia-persiste
         |-org_kde_powerde---5*[{org_kde_powerde}]
-        |-plasmashell-+-Telegram---29*[{Telegram}]
+        |-plasmashell-+-Telegram---28*[{Telegram}]
+        |             |-clion.sh---java-+-bash
+        |             |                 |-fsnotifier64
+        |             |                 |-ion.clangd.main---3*[{ion.clangd.main}]
+        |             |                 `-68*[{java}]
         |             |-firefox-+-Privileged Cont---26*[{Privileged Cont}]
-        |             |         |-3*[Web Content---26*[{Web Content}]]
+        |             |         |-RDD Process---2*[{RDD Process}]
         |             |         |-Web Content---29*[{Web Content}]
+        |             |         |-3*[Web Content---26*[{Web Content}]]
+        |             |         |-2*[Web Content---27*[{Web Content}]]
         |             |         |-Web Content---18*[{Web Content}]
         |             |         |-WebExtensions---26*[{WebExtensions}]
-        |             |         |-file:// Content---27*[{file:// Content}]
         |             |         |-plasma-browser----2*[{plasma-browser-}]
-        |             |         `-93*[{firefox}]
-        |             |-openfortigui---3*[{openfortigui}]
-        |             `-29*[{plasmashell}]
+        |             |         `-101*[{firefox}]
+        |             `-28*[{plasmashell}]
         |-polkit-kde-auth---4*[{polkit-kde-auth}]
         |-polkitd---2*[{polkitd}]
         |-rsyslogd---3*[{rsyslogd}]
@@ -514,9 +524,6 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |      `-{sddm}
         |-snapd---22*[{snapd}]
         |-start_kdeinit
-        |-sublime_text-+-plugin_host-3.3---4*[{plugin_host-3.3}]
-        |              |-plugin_host-3.8---2*[{plugin_host-3.8}]
-        |              `-19*[{sublime_text}]
         |-switcheroo-cont---2*[{switcheroo-cont}]
         |-systemd-+-(sd-pam)
         |         |-baloorunner---2*[{baloorunner}]
@@ -530,10 +537,7 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |         |-gvfs-gphoto2-vo---2*[{gvfs-gphoto2-vo}]
         |         |-gvfs-mtp-volume---2*[{gvfs-mtp-volume}]
         |         |-gvfs-udisks2-vo---3*[{gvfs-udisks2-vo}]
-        |         |-gvfsd-+-gvfsd-dnssd---2*[{gvfsd-dnssd}]
-        |         |       |-gvfsd-network---3*[{gvfsd-network}]
-        |         |       |-gvfsd-trash---2*[{gvfsd-trash}]
-        |         |       `-2*[{gvfsd}]
+        |         |-gvfsd---2*[{gvfsd}]
         |         |-gvfsd-metadata---2*[{gvfsd-metadata}]
         |         |-kactivitymanage---5*[{kactivitymanage}]
         |         |-kglobalaccel5---2*[{kglobalaccel5}]
@@ -581,10 +585,12 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |-dbus-daemon
         |-fwupd---4*[{fwupd}]
         |-gmenudbusmenupr---2*[{gmenudbusmenupr}]
+        |-gpg-agent
         |-haveged
         |-irqbalance---{irqbalance}
         |-kdeconnectd---3*[{kdeconnectd}]
-        |-kdeinit5-+-2*[file.so]
+        |-kdeinit5-+-drkonqi---2*[{drkonqi}]
+        |          |-2*[file.so]
         |          |-kaccess---2*[{kaccess}]
         |          |-kded5-+-konsole-+-bash---ex2.sh-+-ex2-+-ex2-+-ex2-+-ex2---ex2
         |          |       |         |               |     |     |     `-ex2
@@ -596,30 +602,34 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |          |       |         |               |     `-ex2
         |          |       |         |               `-pstree
         |          |       |         `-2*[{konsole}]
-        |          |       |-konsole-+-bash
+        |          |       |-konsole-+-bash---man---pager
         |          |       |         `-2*[{konsole}]
         |          |       `-6*[{kded5}]
         |          `-klauncher---2*[{klauncher}]
         |-2*[kerneloops]
-        |-kio_http_cache_---{kio_http_cache_}
-        |-ksmserver-+-kwin_x11---7*[{kwin_x11}]
+        |-ksmserver-+-kwin_x11---5*[{kwin_x11}]
         |           `-2*[{ksmserver}]
         |-kwalletd5---2*[{kwalletd5}]
+        |-kwin_x11---5*[{kwin_x11}]
         |-mpd---2*[{mpd}]
         |-networkd-dispat
         |-nvidia-persiste
         |-org_kde_powerde---5*[{org_kde_powerde}]
-        |-plasmashell-+-Telegram---29*[{Telegram}]
+        |-plasmashell-+-Telegram---28*[{Telegram}]
+        |             |-clion.sh---java-+-bash
+        |             |                 |-fsnotifier64
+        |             |                 |-ion.clangd.main---3*[{ion.clangd.main}]
+        |             |                 `-68*[{java}]
         |             |-firefox-+-Privileged Cont---26*[{Privileged Cont}]
-        |             |         |-3*[Web Content---26*[{Web Content}]]
+        |             |         |-RDD Process---2*[{RDD Process}]
         |             |         |-Web Content---29*[{Web Content}]
+        |             |         |-3*[Web Content---26*[{Web Content}]]
+        |             |         |-2*[Web Content---27*[{Web Content}]]
         |             |         |-Web Content---18*[{Web Content}]
         |             |         |-WebExtensions---26*[{WebExtensions}]
-        |             |         |-file:// Content---27*[{file:// Content}]
         |             |         |-plasma-browser----2*[{plasma-browser-}]
-        |             |         `-93*[{firefox}]
-        |             |-openfortigui---3*[{openfortigui}]
-        |             `-29*[{plasmashell}]
+        |             |         `-101*[{firefox}]
+        |             `-28*[{plasmashell}]
         |-polkit-kde-auth---4*[{polkit-kde-auth}]
         |-polkitd---2*[{polkitd}]
         |-rsyslogd---3*[{rsyslogd}]
@@ -631,9 +641,6 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |      `-{sddm}
         |-snapd---22*[{snapd}]
         |-start_kdeinit
-        |-sublime_text-+-plugin_host-3.3---4*[{plugin_host-3.3}]
-        |              |-plugin_host-3.8---2*[{plugin_host-3.8}]
-        |              `-19*[{sublime_text}]
         |-switcheroo-cont---2*[{switcheroo-cont}]
         |-systemd-+-(sd-pam)
         |         |-baloorunner---2*[{baloorunner}]
@@ -647,10 +654,7 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |         |-gvfs-gphoto2-vo---2*[{gvfs-gphoto2-vo}]
         |         |-gvfs-mtp-volume---2*[{gvfs-mtp-volume}]
         |         |-gvfs-udisks2-vo---3*[{gvfs-udisks2-vo}]
-        |         |-gvfsd-+-gvfsd-dnssd---2*[{gvfsd-dnssd}]
-        |         |       |-gvfsd-network---3*[{gvfsd-network}]
-        |         |       |-gvfsd-trash---2*[{gvfsd-trash}]
-        |         |       `-2*[{gvfsd}]
+        |         |-gvfsd---2*[{gvfsd}]
         |         |-gvfsd-metadata---2*[{gvfsd-metadata}]
         |         |-kactivitymanage---5*[{kactivitymanage}]
         |         |-kglobalaccel5---2*[{kglobalaccel5}]
@@ -698,10 +702,12 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |-dbus-daemon
         |-fwupd---4*[{fwupd}]
         |-gmenudbusmenupr---2*[{gmenudbusmenupr}]
+        |-gpg-agent
         |-haveged
         |-irqbalance---{irqbalance}
         |-kdeconnectd---3*[{kdeconnectd}]
-        |-kdeinit5-+-2*[file.so]
+        |-kdeinit5-+-drkonqi---2*[{drkonqi}]
+        |          |-2*[file.so]
         |          |-kaccess---2*[{kaccess}]
         |          |-kded5-+-konsole-+-bash---ex2.sh-+-ex2-+-ex2-+-ex2-+-ex2-+-ex2---ex2
         |          |       |         |               |     |     |     |     `-ex2
@@ -721,30 +727,34 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |          |       |         |               |     `-ex2
         |          |       |         |               `-pstree
         |          |       |         `-2*[{konsole}]
-        |          |       |-konsole-+-bash
+        |          |       |-konsole-+-bash---man---pager
         |          |       |         `-2*[{konsole}]
         |          |       `-6*[{kded5}]
         |          `-klauncher---2*[{klauncher}]
         |-2*[kerneloops]
-        |-kio_http_cache_---{kio_http_cache_}
-        |-ksmserver-+-kwin_x11---7*[{kwin_x11}]
+        |-ksmserver-+-kwin_x11---5*[{kwin_x11}]
         |           `-2*[{ksmserver}]
         |-kwalletd5---2*[{kwalletd5}]
+        |-kwin_x11---5*[{kwin_x11}]
         |-mpd---2*[{mpd}]
         |-networkd-dispat
         |-nvidia-persiste
         |-org_kde_powerde---5*[{org_kde_powerde}]
-        |-plasmashell-+-Telegram---29*[{Telegram}]
+        |-plasmashell-+-Telegram---28*[{Telegram}]
+        |             |-clion.sh---java-+-bash
+        |             |                 |-fsnotifier64
+        |             |                 |-ion.clangd.main---3*[{ion.clangd.main}]
+        |             |                 `-68*[{java}]
         |             |-firefox-+-Privileged Cont---26*[{Privileged Cont}]
-        |             |         |-3*[Web Content---26*[{Web Content}]]
+        |             |         |-RDD Process---2*[{RDD Process}]
         |             |         |-Web Content---29*[{Web Content}]
+        |             |         |-3*[Web Content---26*[{Web Content}]]
+        |             |         |-2*[Web Content---27*[{Web Content}]]
         |             |         |-Web Content---18*[{Web Content}]
         |             |         |-WebExtensions---26*[{WebExtensions}]
-        |             |         |-file:// Content---27*[{file:// Content}]
         |             |         |-plasma-browser----2*[{plasma-browser-}]
-        |             |         `-94*[{firefox}]
-        |             |-openfortigui---3*[{openfortigui}]
-        |             `-29*[{plasmashell}]
+        |             |         `-101*[{firefox}]
+        |             `-28*[{plasmashell}]
         |-polkit-kde-auth---4*[{polkit-kde-auth}]
         |-polkitd---2*[{polkitd}]
         |-rsyslogd---3*[{rsyslogd}]
@@ -756,9 +766,6 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |      `-{sddm}
         |-snapd---22*[{snapd}]
         |-start_kdeinit
-        |-sublime_text-+-plugin_host-3.3---4*[{plugin_host-3.3}]
-        |              |-plugin_host-3.8---2*[{plugin_host-3.8}]
-        |              `-19*[{sublime_text}]
         |-switcheroo-cont---2*[{switcheroo-cont}]
         |-systemd-+-(sd-pam)
         |         |-baloorunner---2*[{baloorunner}]
@@ -772,10 +779,7 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |         |-gvfs-gphoto2-vo---2*[{gvfs-gphoto2-vo}]
         |         |-gvfs-mtp-volume---2*[{gvfs-mtp-volume}]
         |         |-gvfs-udisks2-vo---3*[{gvfs-udisks2-vo}]
-        |         |-gvfsd-+-gvfsd-dnssd---2*[{gvfsd-dnssd}]
-        |         |       |-gvfsd-network---3*[{gvfsd-network}]
-        |         |       |-gvfsd-trash---2*[{gvfsd-trash}]
-        |         |       `-2*[{gvfsd}]
+        |         |-gvfsd---2*[{gvfsd}]
         |         |-gvfsd-metadata---2*[{gvfsd-metadata}]
         |         |-kactivitymanage---5*[{kactivitymanage}]
         |         |-kglobalaccel5---2*[{kglobalaccel5}]
@@ -823,10 +827,12 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |-dbus-daemon
         |-fwupd---4*[{fwupd}]
         |-gmenudbusmenupr---2*[{gmenudbusmenupr}]
+        |-gpg-agent
         |-haveged
         |-irqbalance---{irqbalance}
         |-kdeconnectd---3*[{kdeconnectd}]
-        |-kdeinit5-+-2*[file.so]
+        |-kdeinit5-+-drkonqi---2*[{drkonqi}]
+        |          |-2*[file.so]
         |          |-kaccess---2*[{kaccess}]
         |          |-kded5-+-konsole-+-bash---ex2.sh-+-ex2-+-ex2-+-ex2-+-ex2-+-ex2---ex2
         |          |       |         |               |     |     |     |     `-ex2
@@ -846,30 +852,34 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |          |       |         |               |     `-ex2
         |          |       |         |               `-pstree
         |          |       |         `-2*[{konsole}]
-        |          |       |-konsole-+-bash
+        |          |       |-konsole-+-bash---man---pager
         |          |       |         `-2*[{konsole}]
         |          |       `-6*[{kded5}]
         |          `-klauncher---2*[{klauncher}]
         |-2*[kerneloops]
-        |-kio_http_cache_---{kio_http_cache_}
-        |-ksmserver-+-kwin_x11---7*[{kwin_x11}]
+        |-ksmserver-+-kwin_x11---5*[{kwin_x11}]
         |           `-2*[{ksmserver}]
         |-kwalletd5---2*[{kwalletd5}]
+        |-kwin_x11---5*[{kwin_x11}]
         |-mpd---2*[{mpd}]
         |-networkd-dispat
         |-nvidia-persiste
         |-org_kde_powerde---5*[{org_kde_powerde}]
-        |-plasmashell-+-Telegram---29*[{Telegram}]
+        |-plasmashell-+-Telegram---28*[{Telegram}]
+        |             |-clion.sh---java-+-bash
+        |             |                 |-fsnotifier64
+        |             |                 |-ion.clangd.main---3*[{ion.clangd.main}]
+        |             |                 `-68*[{java}]
         |             |-firefox-+-Privileged Cont---26*[{Privileged Cont}]
-        |             |         |-3*[Web Content---26*[{Web Content}]]
+        |             |         |-RDD Process---2*[{RDD Process}]
         |             |         |-Web Content---29*[{Web Content}]
+        |             |         |-3*[Web Content---26*[{Web Content}]]
+        |             |         |-2*[Web Content---27*[{Web Content}]]
         |             |         |-Web Content---18*[{Web Content}]
         |             |         |-WebExtensions---26*[{WebExtensions}]
-        |             |         |-file:// Content---27*[{file:// Content}]
         |             |         |-plasma-browser----2*[{plasma-browser-}]
-        |             |         `-94*[{firefox}]
-        |             |-openfortigui---3*[{openfortigui}]
-        |             `-29*[{plasmashell}]
+        |             |         `-101*[{firefox}]
+        |             `-28*[{plasmashell}]
         |-polkit-kde-auth---4*[{polkit-kde-auth}]
         |-polkitd---2*[{polkitd}]
         |-rsyslogd---3*[{rsyslogd}]
@@ -881,9 +891,6 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |      `-{sddm}
         |-snapd---22*[{snapd}]
         |-start_kdeinit
-        |-sublime_text-+-plugin_host-3.3---4*[{plugin_host-3.3}]
-        |              |-plugin_host-3.8---2*[{plugin_host-3.8}]
-        |              `-19*[{sublime_text}]
         |-switcheroo-cont---2*[{switcheroo-cont}]
         |-systemd-+-(sd-pam)
         |         |-baloorunner---2*[{baloorunner}]
@@ -897,10 +904,7 @@ systemd-+-DiscoverNotifie---3*[{DiscoverNotifie}]
         |         |-gvfs-gphoto2-vo---2*[{gvfs-gphoto2-vo}]
         |         |-gvfs-mtp-volume---2*[{gvfs-mtp-volume}]
         |         |-gvfs-udisks2-vo---3*[{gvfs-udisks2-vo}]
-        |         |-gvfsd-+-gvfsd-dnssd---2*[{gvfsd-dnssd}]
-        |         |       |-gvfsd-network---3*[{gvfsd-network}]
-        |         |       |-gvfsd-trash---2*[{gvfsd-trash}]
-        |         |       `-2*[{gvfsd}]
+        |         |-gvfsd---2*[{gvfsd}]
         |         |-gvfsd-metadata---2*[{gvfsd-metadata}]
         |         |-kactivitymanage---5*[{kactivitymanage}]
         |         |-kglobalaccel5---2*[{kglobalaccel5}]
