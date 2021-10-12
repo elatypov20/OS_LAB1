@@ -1,0 +1,2 @@
+Physical address is a real address in the RAM. 
+Virtual address is an address in the virtual memory, which is converted into real address while accessing memory.

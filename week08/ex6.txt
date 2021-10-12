@@ -1,0 +1,6 @@
+If we have 8KB page, it means that we 2^13 bytes for page.
+It means 13 bits of address is an offset inside page.
+We have 16-bit virtual address, 13 of which is offset inside page.
+16-13=3 bits for a page number => 2^3 = 8 pages.
+
+Answer: there are 8 entries needed
