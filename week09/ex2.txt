@@ -1,0 +1,3 @@
+To maximize ratio, we should maximize hit value. To maximize hit, we should always refer to the same page (e.g. 1, 1, 1, 1 etc.), so as a result we will have n - 1 hits and 1 miss -> ratio = n - 1
+
+To minimize ratio, we should minimize hit value. To minimize it, we should always refer to the different page (e.g. 1, 2, 3, 4 etc.), so as a result we will have 0 hits -> ratio = 0  
