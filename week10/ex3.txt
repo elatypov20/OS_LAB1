@@ -1,0 +1,14 @@
+Removing executable permisions:
+-rw-rw-r-- 1 coreuser coreuser 5 окт 21 17:08 _ex3.txt
+
+Granting all permissions to owner and others:
+-rwxrw-rwx 1 coreuser coreuser 5 окт 21 17:08 _ex3.txt
+
+Making group permissions same as user permissions:
+-rwxrwxrwx 1 coreuser coreuser 5 окт 21 17:08 _ex3.txt
+
+chmod 660 will give only read and write permissions to user and group  and remove all permissions for other users
+
+chmod 775 will give all permissions to all users except writing for other users
+
+chmod 777 will give all permissions to all users
