@@ -1,0 +1,5 @@
+Prevention is very good strategy because it doesn't cause any overhead during the runtime and the only problem is that it can be too complex to make such structure
+
+Recovery is as safe as prevention but it has extra overhead during the runtime, so it is good choice only if prevention is too hard or impossible to implement
+
+Avoidance is applicable only when some extra information is available, so we can apply it to avoid deadlock. Not applicable in al cases, obviously.
